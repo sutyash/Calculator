@@ -24,3 +24,7 @@ A simple calculator web application made using HTML, CSS and JavaScript.
 1. Download this repository.
 2. Open `index.html` in your browser.
 3. Use the calculator.
+4. 
+## Screenshot
+
+![Calculator](calculator.png)
