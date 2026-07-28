@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <div class="input-row">
+      <div class="input-group">
+        <label>Value 1:</label>
+        <input type="number" id="val1" placeholder="Enter a Number" />
+      </div>
+      <div id="operator" class="operator-display"></div>
+      <div class="input-group">
+        <label>Value 2:</label>
+        <input type="number" id="val2" placeholder="Enter a Number" />
+      </div>
+    </div>
+    <div id="result"></div>
+
+    <hr />
+    <div class="button-grid">
+      <button onclick="resetCalculator()">AC</button>
+      <button onclick="setOperator('%')">%</button>
+      <button onclick="deleteLastChar()">x</button>
+      <button onclick="divide()">÷</button>
+
+      <button id="number7" onclick="inputNumber(7)">7</button>
+      <button id="number8" onclick="inputNumber(8)">8</button>
+      <button id="number9" onclick="inputNumber(9)">9</button>
+      <button onclick="multiply()">*</button>
+
+      <button id="number4" onclick="inputNumber(4)">4</button>
+      <button id="number5" onclick="inputNumber(5)">5</button>
+      <button id="number6" onclick="inputNumber(6)">6</button>
+      <button onclick="subtraction()">-</button>
+
+      <button id="number1" onclick="inputNumber(1)">1</button>
+      <button id="number2" onclick="inputNumber(2)">2</button>
+      <button id="number3" onclick="inputNumber(3)">3</button>
+      <button onclick="add()">+</button>
+
+      <button
+        onclick="
+          inputNumber(0);
+          inputNumber(0);
+        "
+      >
+        00
+      </button>
+      <button onclick="inputNumber(0)">0</button>
+      <button onclick="inputNumber('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+    <hr />
+  </body>
+  <script src="script.js"></script>
+</html>
